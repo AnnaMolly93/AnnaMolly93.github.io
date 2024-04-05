@@ -1,0 +1,84 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* fundo preto */
+    color: #FFD700; /* texto em dourado */
+    text-align: center;
+}
+
+header {
+    position: relative;
+    background-color: #1C1C1C; /* cabeçalho em cinza escuro */
+    padding: 20px;
+    color: #FFF; /* texto do cabeçalho em branco */
+}
+
+.darth-vader-gif {
+    height: 100px; /* Ajuste o tamanho conforme necessário */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.products {
+    padding: 20px;
+}
+
+.product {
+    background-color: #333; /* fundo dos produtos */
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.product-image {
+    flex-basis: 15%; /* Reduzindo o tamanho da imagem para metade */
+    padding: 10px;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-info {
+    flex-basis: 85%; /* Ajustando o espaço da informação do produto */
+    padding: 10px;
+    text-align: left;
+}
+
+.buy-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #FFD700; /* botão em dourado */
+    color: #000; /* texto do botão em preto */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.buy-button:hover {
+    background-color: #CCA707;
+}
+
+@media screen and (max-width: 600px) {
+    .product {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-image, .product-info {
+        flex-basis: 100%;
+    }
+}
